@@ -1,0 +1,253 @@
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .signup-form {
+    flex-direction: column;
+  }
+}
+/* Reset some default styles */
+body, h1, p, a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Hero section */
+body {
+  background-image: url('assets/backgroundproducts,jpg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+ .hero {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 1; /* BELOW overlay if needed */
+  position: relative; /* NOT absolute */
+}
+
+.hero-content {
+  background: rgba(24, 23, 23, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  color: rgba(248, 235, 243, 0.527);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #131212;
+  color: rgb(214, 160, 160);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.about {
+  padding: 60px 20px;
+  background-color: #0e0d0d;
+  text-align: center;
+  
+}
+
+.about .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ebdfdf;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #f3c9fdc0;
+  line-height: 1.6;
+}
+.products {
+  background-color: #0e0d0d;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #f0dfdf;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+.testimonials {
+  background-color: #161616;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #f0dcdc;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.testimonial-card {
+  background-color: #fef6f4;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+  font-style: italic;
+  color: #444;
+}
+
+.testimonial-card h4 {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: normal;
+  color: #222020;
+}
+.signup {
+  background-color: #f3c6b8;
+  padding: 60px 20px;
+  text-align: center;
+  color: #333;
+}
+
+.signup h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.signup p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signup-form input {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  padding: 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #111;
+}
+.footer {
+  background-color: #111010;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #eee;
+}
+
+.footer .socials {
+  margin-top: 10px;
+}
+
+.footer .socials a {
+  margin: 0 10px;
+  color: #888;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer .socials a:hover {
+  color: #333;
+}
+.product-image {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin: 20px;
+}
